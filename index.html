@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Dofus Galaxy — Launcher Oficial</title>
@@ -72,7 +73,7 @@
         inset 0 0 0 3px var(--stone-mid),
         inset 0 0 0 5px var(--stone-light),
         inset 0 0 0 8px var(--stone-darkest),
-        0 0 30px rgba(0,0,0,0.9);
+        0 0 30px rgba(0, 0, 0, 0.9);
       display: flex;
       flex-direction: column;
     }
@@ -85,21 +86,56 @@
       border-radius: 50%;
       background: radial-gradient(circle at 35% 35%, var(--gold-bright) 0%, var(--gold-dark) 70%, var(--stone-darkest) 100%);
       box-shadow:
-        0 1px 2px rgba(0,0,0,0.8),
-        inset 0 1px 1px rgba(255,255,255,0.4),
-        0 0 6px rgba(245,197,66,0.3);
+        0 1px 2px rgba(0, 0, 0, 0.8),
+        inset 0 1px 1px rgba(255, 255, 255, 0.4),
+        0 0 6px rgba(245, 197, 66, 0.3);
       z-index: 50;
     }
-    .rivet-tl { top: 12px; left: 12px; }
-    .rivet-tr { top: 12px; right: 12px; }
-    .rivet-bl { bottom: 12px; left: 12px; }
-    .rivet-br { bottom: 12px; right: 12px; }
+
+    .rivet-tl {
+      top: 12px;
+      left: 12px;
+    }
+
+    .rivet-tr {
+      top: 12px;
+      right: 12px;
+    }
+
+    .rivet-bl {
+      bottom: 12px;
+      left: 12px;
+    }
+
+    .rivet-br {
+      bottom: 12px;
+      right: 12px;
+    }
 
     /* Additional Edge Rivets */
-    .rivet-tm { top: 12px; left: 50%; transform: translateX(-50%); }
-    .rivet-bm { bottom: 12px; left: 50%; transform: translateX(-50%); }
-    .rivet-ml { top: 50%; left: 12px; transform: translateY(-50%); }
-    .rivet-mr { top: 50%; right: 12px; transform: translateY(-50%); }
+    .rivet-tm {
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .rivet-bm {
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .rivet-ml {
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+    }
+
+    .rivet-mr {
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+    }
 
     /* ===== TITLE BAR ===== */
     .title-bar {
@@ -133,7 +169,7 @@
       font-weight: 700;
       font-size: 11px;
       color: var(--gold-bright);
-      text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
       letter-spacing: 2px;
     }
 
@@ -200,7 +236,7 @@
       inset: 0;
       background:
         radial-gradient(ellipse at 50% 50%, rgba(18, 9, 32, 0.35) 0%, rgba(8, 4, 16, 0.72) 100%),
-        linear-gradient(180deg, rgba(10,5,18,0.2) 0%, rgba(10,5,18,0.65) 100%);
+        linear-gradient(180deg, rgba(10, 5, 18, 0.2) 0%, rgba(10, 5, 18, 0.65) 100%);
       z-index: 1;
       pointer-events: none;
     }
@@ -226,13 +262,20 @@
       width: 58px;
       height: 58px;
       object-fit: contain;
-      filter: drop-shadow(0 0 12px rgba(241,196,15,0.9)) drop-shadow(0 0 25px rgba(175,122,197,0.8));
+      filter: drop-shadow(0 0 12px rgba(241, 196, 15, 0.9)) drop-shadow(0 0 25px rgba(175, 122, 197, 0.8));
       animation: eggFloat 3s ease-in-out infinite alternate;
     }
 
     @keyframes eggFloat {
-      0% { transform: translateY(0) rotate(-2deg); filter: drop-shadow(0 0 10px rgba(241,196,15,0.8)) drop-shadow(0 0 20px rgba(175,122,197,0.7)); }
-      100% { transform: translateY(-5px) rotate(2deg); filter: drop-shadow(0 0 16px rgba(241,196,15,1)) drop-shadow(0 0 35px rgba(210,180,222,0.9)); }
+      0% {
+        transform: translateY(0) rotate(-2deg);
+        filter: drop-shadow(0 0 10px rgba(241, 196, 15, 0.8)) drop-shadow(0 0 20px rgba(175, 122, 197, 0.7));
+      }
+
+      100% {
+        transform: translateY(-5px) rotate(2deg);
+        filter: drop-shadow(0 0 16px rgba(241, 196, 15, 1)) drop-shadow(0 0 35px rgba(210, 180, 222, 0.9));
+      }
     }
 
     .title-group {
@@ -249,7 +292,7 @@
       background: linear-gradient(180deg, #fff7d6 0%, #ffd452 40%, #c48c18 80%, #6e4a05 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.9)) drop-shadow(0 0 15px rgba(245,197,66,0.6));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 15px rgba(245, 197, 66, 0.6));
     }
 
     .logo-text-galaxy {
@@ -260,7 +303,7 @@
       background: linear-gradient(180deg, #f5eef8 0%, #bb8fce 45%, #7d3c98 80%, #4a235a 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.9)) drop-shadow(0 0 18px rgba(187,143,206,0.8));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 18px rgba(187, 143, 206, 0.8));
     }
 
     .logo-subtitle {
@@ -270,7 +313,7 @@
       letter-spacing: 6px;
       text-transform: uppercase;
       color: #dfcfb2;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 0 8px rgba(245,197,66,0.5);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 8px rgba(245, 197, 66, 0.5);
       margin-top: 4px;
     }
 
@@ -280,10 +323,12 @@
       width: 120px;
       height: 2px;
     }
+
     .banner-decor-left {
       left: 40px;
       background: linear-gradient(270deg, var(--stone-light), transparent);
     }
+
     .banner-decor-right {
       right: 40px;
       background: linear-gradient(90deg, var(--stone-light), transparent);
@@ -299,9 +344,9 @@
         linear-gradient(180deg, var(--parchment-light) 0%, var(--parchment-bg) 30%, var(--parchment-dark) 100%);
       border: 2px solid var(--stone-mid);
       box-shadow:
-        inset 0 2px 6px rgba(0,0,0,0.15),
-        inset 0 -2px 6px rgba(0,0,0,0.1),
-        0 2px 4px rgba(0,0,0,0.3);
+        inset 0 2px 6px rgba(0, 0, 0, 0.15),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.3);
       padding: 16px 20px;
       overflow: hidden;
       display: flex;
@@ -332,10 +377,12 @@
     .news-content::-webkit-scrollbar {
       width: 8px;
     }
+
     .news-content::-webkit-scrollbar-track {
       background: var(--parchment-dark);
       border-radius: 4px;
     }
+
     .news-content::-webkit-scrollbar-thumb {
       background: var(--stone-mid);
       border-radius: 4px;
@@ -343,8 +390,9 @@
 
     .news-item {
       padding: 8px 0;
-      border-bottom: 1px solid rgba(196,178,131,0.5);
+      border-bottom: 1px solid rgba(196, 178, 131, 0.5);
     }
+
     .news-item:last-child {
       border-bottom: none;
     }
@@ -402,12 +450,12 @@
       background: linear-gradient(180deg, var(--stone-light) 0%, var(--stone-mid) 50%, var(--stone-dark) 100%);
       border: 2px solid var(--stone-dark);
       box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.1),
-        inset 0 -1px 2px rgba(0,0,0,0.3),
-        0 2px 4px rgba(0,0,0,0.4);
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.4);
       cursor: pointer;
       transition: all 0.15s;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     }
 
     .stone-btn:hover {
@@ -417,8 +465,8 @@
 
     .stone-btn:active {
       box-shadow:
-        inset 0 2px 4px rgba(0,0,0,0.5),
-        0 1px 2px rgba(0,0,0,0.3);
+        inset 0 2px 4px rgba(0, 0, 0, 0.5),
+        0 1px 2px rgba(0, 0, 0, 0.3);
     }
 
     /* ===== ARCHITECTURE SWITCH (64-BIT / 32-BIT) ===== */
@@ -428,7 +476,7 @@
       gap: 6px;
       background: linear-gradient(180deg, #100906 0%, #1a100a 100%);
       border: 2px solid var(--stone-darkest);
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 var(--stone-light);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 1px 0 var(--stone-light);
       padding: 2px;
     }
 
@@ -488,17 +536,17 @@
     .arch-btn.active {
       background: linear-gradient(180deg, #e67e22 0%, #b84f04 50%, #873600 100%);
       border: 1px solid #f39c12;
-      box-shadow: 0 0 10px rgba(230, 126, 34, 0.45), inset 0 1px 0 rgba(255,255,255,0.35);
+      box-shadow: 0 0 10px rgba(230, 126, 34, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
     }
 
     .arch-btn.active .arch-name {
       color: #ffffff;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.8), 0 0 6px rgba(243,156,18,0.7);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8), 0 0 6px rgba(243, 156, 18, 0.7);
     }
 
     .arch-btn.active .arch-sub {
       color: #fdebd0;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
     }
 
     /* ===== PROGRESS BAR (stone groove) ===== */
@@ -522,8 +570,8 @@
       background: var(--bar-track);
       border: 2px solid var(--stone-darkest);
       box-shadow:
-        inset 0 2px 4px rgba(0,0,0,0.7),
-        inset 0 -1px 2px rgba(0,0,0,0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.7),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.3),
         0 1px 0 var(--stone-light);
       position: relative;
       overflow: hidden;
@@ -534,9 +582,9 @@
       width: 0%;
       background: linear-gradient(180deg, var(--bar-fill-end) 0%, var(--bar-fill-mid) 40%, var(--bar-fill-start) 100%);
       box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.3),
-        inset 0 -2px 3px rgba(0,0,0,0.2),
-        0 0 8px rgba(243,156,18,0.4);
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 3px rgba(0, 0, 0, 0.2),
+        0 0 8px rgba(243, 156, 18, 0.4);
       transition: width 0.3s ease;
       position: relative;
     }
@@ -545,13 +593,11 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 6px,
-        rgba(255,255,255,0.08) 6px,
-        rgba(255,255,255,0.08) 12px
-      );
+      background: repeating-linear-gradient(-45deg,
+          transparent,
+          transparent 6px,
+          rgba(255, 255, 255, 0.08) 6px,
+          rgba(255, 255, 255, 0.08) 12px);
     }
 
     .progress-bar-fill::after {
@@ -561,13 +607,18 @@
       left: -80%;
       width: 80%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
       animation: barShine 2.5s ease-in-out infinite;
     }
 
     @keyframes barShine {
-      0% { left: -80%; }
-      100% { left: 180%; }
+      0% {
+        left: -80%;
+      }
+
+      100% {
+        left: 180%;
+      }
     }
 
     .progress-info {
@@ -580,7 +631,7 @@
       font-family: 'MedievalSharp', serif;
       font-size: 11px;
       color: var(--parchment-dark);
-      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     }
 
     .progress-percent {
@@ -588,7 +639,7 @@
       font-size: 11px;
       font-weight: 700;
       color: var(--orange-glow);
-      text-shadow: 0 0 6px rgba(241,196,15,0.4), 0 1px 2px rgba(0,0,0,0.6);
+      text-shadow: 0 0 6px rgba(241, 196, 15, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6);
     }
 
     /* ===== PLAY BUTTON (Signature Orange) ===== */
@@ -600,14 +651,14 @@
       text-transform: uppercase;
       padding: 9px 34px;
       color: #fff;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 8px rgba(0, 0, 0, 0.3);
       background: linear-gradient(180deg, var(--orange-glow) 0%, var(--orange-top) 25%, var(--orange-mid) 75%, var(--orange-pressed) 100%);
       border: 3px solid var(--btn-border);
       box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.3),
-        inset 0 -2px 4px rgba(0,0,0,0.2),
-        0 3px 8px rgba(0,0,0,0.5),
-        0 0 12px rgba(243,156,18,0.3);
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+        0 3px 8px rgba(0, 0, 0, 0.5),
+        0 0 12px rgba(243, 156, 18, 0.3);
       cursor: pointer;
       transition: all 0.2s;
       opacity: 0;
@@ -625,10 +676,10 @@
     .play-btn:hover {
       background: linear-gradient(180deg, #f7dc6f 0%, var(--orange-glow) 25%, var(--orange-top) 75%, var(--orange-mid) 100%);
       box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.4),
-        inset 0 -2px 4px rgba(0,0,0,0.15),
-        0 3px 12px rgba(0,0,0,0.4),
-        0 0 25px rgba(243,156,18,0.5);
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.15),
+        0 3px 12px rgba(0, 0, 0, 0.4),
+        0 0 25px rgba(243, 156, 18, 0.5);
       transform: scale(1.03);
     }
 
@@ -636,13 +687,18 @@
       background: linear-gradient(180deg, var(--orange-mid) 0%, var(--orange-pressed) 50%, #a04000 100%);
       transform: scale(0.97);
       box-shadow:
-        inset 0 2px 6px rgba(0,0,0,0.5),
-        0 1px 4px rgba(0,0,0,0.4);
+        inset 0 2px 6px rgba(0, 0, 0, 0.5),
+        0 1px 4px rgba(0, 0, 0, 0.4);
     }
 
     @keyframes playPulse {
-      from { box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), inset 0 -2px 4px rgba(0,0,0,0.2), 0 3px 8px rgba(0,0,0,0.5), 0 0 12px rgba(243,156,18,0.3); }
-      to   { box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -2px 4px rgba(0,0,0,0.15), 0 4px 14px rgba(0,0,0,0.6), 0 0 22px rgba(243,156,18,0.6); }
+      from {
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.5), 0 0 12px rgba(243, 156, 18, 0.3);
+      }
+
+      to {
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.15), 0 4px 14px rgba(0, 0, 0, 0.6), 0 0 22px rgba(243, 156, 18, 0.6);
+      }
     }
 
     /* ===== MODAL OVERLAY ===== */
@@ -673,8 +729,8 @@
       border: 4px solid var(--stone-mid);
       box-shadow:
         inset 0 0 0 2px var(--stone-dark),
-        0 0 40px rgba(0,0,0,0.8),
-        0 0 80px rgba(0,0,0,0.4);
+        0 0 40px rgba(0, 0, 0, 0.8),
+        0 0 80px rgba(0, 0, 0, 0.4);
       padding: 22px 24px;
       transform: scale(0.9);
       transition: transform 0.25s;
@@ -693,7 +749,7 @@
       margin-bottom: 16px;
       padding-bottom: 8px;
       border-bottom: 2px solid var(--parchment-shadow);
-      text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     }
 
     .modal-field {
@@ -807,7 +863,7 @@
     .modal-input {
       flex: 1;
       padding: 8px 10px;
-      background: rgba(255,255,255,0.7);
+      background: rgba(255, 255, 255, 0.7);
       border: 2px solid var(--parchment-shadow);
       font-family: 'MedievalSharp', serif;
       font-size: 12px;
@@ -835,7 +891,7 @@
     .modal-input:focus {
       outline: none;
       border-color: var(--orange-mid);
-      box-shadow: 0 0 6px rgba(230,126,34,0.3);
+      box-shadow: 0 0 6px rgba(230, 126, 34, 0.3);
     }
 
     .modal-input::placeholder {
@@ -864,8 +920,8 @@
       color: #fff;
       background: linear-gradient(180deg, var(--orange-top) 0%, var(--orange-mid) 100%);
       border: 2px solid var(--btn-border);
-      text-shadow: 0 1px 2px rgba(0,0,0,0.4);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     }
 
     .modal-btn-save:hover {
@@ -901,7 +957,7 @@
       font-family: 'MedievalSharp', serif;
       font-size: 11px;
       color: var(--parchment-dark);
-      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
       margin-left: 6px;
     }
 
@@ -910,16 +966,24 @@
       height: 8px;
       border-radius: 50%;
       background: #2ecc71;
-      box-shadow: 0 0 6px rgba(46,204,113,0.6);
+      box-shadow: 0 0 6px rgba(46, 204, 113, 0.6);
       animation: dotPulse 2s ease-in-out infinite;
     }
 
     @keyframes dotPulse {
-      0%, 100% { box-shadow: 0 0 4px rgba(46,204,113,0.4); }
-      50% { box-shadow: 0 0 10px rgba(46,204,113,0.8); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 4px rgba(46, 204, 113, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 10px rgba(46, 204, 113, 0.8);
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="outer-frame">
     <!-- Rivets -->
@@ -972,22 +1036,26 @@
           <div class="news-item">
             <div class="news-item-title">🌌 ¡Bienvenido al Universo Dofus Galaxy!</div>
             <div class="news-item-date">Temporada 2026 • Servidor Activo</div>
-            <p>Embárcate en una experiencia retro 1.29 / 1.39 mejorada. Descubre nuevos desafíos cósmicos, mazmorras personalizadas y una economía equilibrada para tu aventura.</p>
+            <p>Embárcate en una experiencia retro 1.29 / 1.39 mejorada. Descubre nuevos desafíos cósmicos, mazmorras
+              personalizadas y una economía equilibrada para tu aventura.</p>
           </div>
           <div class="news-item">
             <div class="news-item-title">⚡ Rates del Servidor</div>
             <div class="news-item-date">Configuración Oficial</div>
-            <p>Experiencia: <strong>x3</strong> • Botín (Drop): <strong>x2</strong> • Oficios: <strong>x2</strong> • Kamas: <strong>x2</strong>. Sistema de Koliseo 1v1 y 3v3 con recompensas galácticas exclusivas.</p>
+            <p>Experiencia: <strong>x3</strong> • Botín (Drop): <strong>x2</strong> • Oficios: <strong>x2</strong> •
+              Kamas: <strong>x2</strong>. Sistema de Koliseo 1v1 y 3v3 con recompensas galácticas exclusivas.</p>
           </div>
           <div class="news-item">
             <div class="news-item-title">🛸 Mazmorras y Guardianes Astrales</div>
             <div class="news-item-date">Nuevo contenido</div>
-            <p>Derrota a los nuevos jefes de mazmorra para forjar equipamientos astrales y coleccionar las reliquias galácticas que aumentarán el poder de tu gremio.</p>
+            <p>Derrota a los nuevos jefes de mazmorra para forjar equipamientos astrales y coleccionar las reliquias
+              galácticas que aumentarán el poder de tu gremio.</p>
           </div>
           <div class="news-item">
             <div class="news-item-title">🛡 Estabilidad y Seguridad</div>
             <div class="news-item-date">Núcleo Optimizado</div>
-            <p>Servidor protegido contra ataques DDoS, arquitectura anti-lag y sincronización instantánea para una experiencia de juego fluida.</p>
+            <p>Servidor protegido contra ataques DDoS, arquitectura anti-lag y sincronización instantánea para una
+              experiencia de juego fluida.</p>
           </div>
         </div>
       </div>
@@ -996,7 +1064,8 @@
       <div class="controls-panel">
         <div class="controls-left">
           <button class="stone-btn" id="btn-settings">⚙ Opciones</button>
-          <button class="stone-btn" id="btn-tabs" title="Abrir Gestor Multi-Cuentas en Pestañas">📑 Multi-Cuentas</button>
+          <button class="stone-btn" id="btn-tabs" title="Abrir Gestor Multi-Cuentas en Pestañas">📑
+            Multi-Cuentas</button>
           <div class="server-status">
             <div class="status-dot"></div>
             <span>Dofus Galaxy • En línea</span>
@@ -1008,11 +1077,13 @@
           <div class="arch-toggle-container" title="Selecciona entre Modo 64-bit Remastered o 32-bit Clásico">
             <span class="arch-toggle-label">Modo:</span>
             <div class="arch-toggle-group">
-              <button type="button" class="arch-btn active" data-mode="64" id="btn-mode-64" title="Modo 64-bit (16:9 Remastered): Pantalla ancha, Electron y animaciones a 60 FPS">
+              <button type="button" class="arch-btn active" data-mode="64" id="btn-mode-64"
+                title="Modo 64-bit (16:9 Remastered): Pantalla ancha, Electron y animaciones a 60 FPS">
                 <span class="arch-name">🌌 64-BIT</span>
                 <span class="arch-sub">16:9 Panorámica</span>
               </button>
-              <button type="button" class="arch-btn" data-mode="32" id="btn-mode-32" title="Modo 32-bit (4:3 Clásico): Standalone Flash Player ultraligero, ideal para 8 cuentas">
+              <button type="button" class="arch-btn" data-mode="32" id="btn-mode-32"
+                title="Modo 32-bit (4:3 Clásico): Standalone Flash Player ultraligero, ideal para 8 cuentas">
                 <span class="arch-name">⚔️ 32-BIT</span>
                 <span class="arch-sub">4:3 Clásico</span>
               </button>
@@ -1054,7 +1125,8 @@
           </div>
           <div class="modal-mode-card" data-mode="32" id="modal-card-32">
             <div class="card-title">⚔️ 32-BIT CLÁSICO</div>
-            <div class="card-desc">Cliente tradicional 4:3 en Flash Player standalone. Mínimo consumo de RAM para 8 cuentas.</div>
+            <div class="card-desc">Cliente tradicional 4:3 en Flash Player standalone. Mínimo consumo de RAM para 8
+              cuentas.</div>
           </div>
         </div>
       </div>
@@ -1073,9 +1145,12 @@
       <div class="modal-field">
         <label class="modal-label" for="input-client-dir">Carpeta Raíz del Cliente Dofus</label>
         <div class="modal-input-group">
-          <input class="modal-input" id="input-client-dir" type="text" placeholder="Selecciona la carpeta donde está Dofus Retro.exe">
-          <button class="modal-btn-browse" id="btn-browse-folder" type="button" title="Seleccionar Carpeta">📁 Carpeta</button>
-          <button class="modal-btn-browse" id="btn-browse-file" type="button" title="Seleccionar Archivo .exe">📄 Archivo</button>
+          <input class="modal-input" id="input-client-dir" type="text"
+            placeholder="Selecciona la carpeta donde está Dofus Retro.exe">
+          <button class="modal-btn-browse" id="btn-browse-folder" type="button" title="Seleccionar Carpeta">📁
+            Carpeta</button>
+          <button class="modal-btn-browse" id="btn-browse-file" type="button" title="Seleccionar Archivo .exe">📄
+            Archivo</button>
         </div>
       </div>
 
@@ -1305,11 +1380,11 @@
 
     // Loading simulation
     const statusMessages = [
-      { at: 0,   text: 'Verificando archivos...' },
-      { at: 20,  text: 'Cargando recursos del juego...' },
-      { at: 45,  text: 'Comprobando actualizaciones...' },
-      { at: 65,  text: 'Conectando al servidor...' },
-      { at: 85,  text: 'Preparando cliente...' },
+      { at: 0, text: 'Verificando archivos...' },
+      { at: 20, text: 'Cargando recursos del juego...' },
+      { at: 45, text: 'Comprobando actualizaciones...' },
+      { at: 65, text: 'Conectando al servidor...' },
+      { at: 85, text: 'Preparando cliente...' },
       { at: 100, text: '¡Listo para jugar!' },
     ];
 
@@ -1418,4 +1493,5 @@
     })();
   </script>
 </body>
+
 </html>
