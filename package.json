@@ -1,0 +1,63 @@
+{
+  "name": "dofus-galaxy-launcher",
+  "productName": "Dofus Galaxy Launcher",
+  "version": "1.0.0",
+  "description": "Launcher oficial para el servidor Dofus Galaxy",
+  "main": "main.js",
+  "scripts": {
+    "start": "node start.js",
+    "launch": "node start.js",
+    "dist": "electron-builder --win"
+  },
+  "keywords": [
+    "dofus",
+    "galaxy",
+    "retro",
+    "launcher"
+  ],
+  "author": "Dofus Galaxy Server",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^45.3.2",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.dofusgalaxy.launcher",
+    "productName": "Dofus Galaxy Launcher",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Dofus Galaxy Launcher",
+      "include": "build/installer.nsh"
+    },
+    "extraResources": [
+      "DofusGalaxyTabs.exe"
+    ],
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "galaxy-banner.jpg",
+      "icon.ico",
+      "icon.png",
+      "package.json"
+    ]
+  }
+}
